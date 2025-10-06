@@ -8,7 +8,7 @@ export default function Hero() {
                 <p className="text-center text-4xl tracking-widest xl:text-6xl font-bold">MBATA LAWRENCE CHIBUZOR</p>
                 <p className="text-center text-md lg:text-lg xl:text-xl font-thin ">Full-Stack Web/Ethereum Developer</p>
                 <p className="text-center text-sm lg:text-lg xl:text-xl font-thin">&#91; <span className="text-center font-semibold text-md lg:text-lg xl:text-xl text-neutral-400">FrontEnd, BackEnd, Smart Contracts, dApps</span> &#93;</p>
-                <Link href="/web2mbatalawrence" download="mbatalawrenceResume.pdf">
+                <Link href="/webMbataLawrence.pdf" download="mbatalawrenceResume.pdf">
                     <button className="bg-neutral-600 rounded-full px-5 py-2 text-md lg:text-lg xl:text-xl hover:scale-110 transition-all duration-300 border-2 border-white/50">Download CV</button>
                 </Link>
                 <div className="flex items-center justify-center gap-4 flex-wrap mt-5">
