@@ -32,7 +32,7 @@ const GlassIcons: React.FC<GlassIconsProps> = ({ items, className }) => {
 //   grid gap-[5em] grid-cols-2 md:grid-cols-3
 // w-[4.5em] h-[4.5em]
   return (
-    <div className={`flex flex-wrap justify-center gap-2 sm:gap-10 lg:gap-15 mx-auto py-[3em] overflow-visible ${className || ''}`}>
+    <div className={`flex flex-wrap justify-center items-center gap-6 sm:gap-10 lg:gap-15 mx-auto py-[3em] overflow-visible ${className || ''}`}>
       {items.map((item, index) => (
         <button
           key={index}
@@ -61,7 +61,7 @@ const GlassIcons: React.FC<GlassIconsProps> = ({ items, className }) => {
             </span>
           </span>
 
-          <span className="tetx-sm lg:text-lg absolute top-full left-0 right-0 text-center whitespace-nowrap leading-[2] text-base opacity-0 transition-[opacity,transform] duration-300 ease-[cubic-bezier(0.83,0,0.17,1)] translate-y-0 group-hover:opacity-100 group-hover:[transform:translateY(20%)]">
+          <span className="text-xs lg:text-lg absolute top-full left-0 right-0 text-center whitespace-nowrap leading-[2] text-base opacity-0 transition-[opacity,transform] duration-300 ease-[cubic-bezier(0.83,0,0.17,1)] translate-y-0 group-hover:opacity-100 group-hover:[transform:translateY(20%)]">
             {item.label}
           </span>
         </button>

@@ -9,13 +9,15 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
-      <div className="mx-auto flex flex-col items-center justify-center gap-20  lg:gap-25 xl:gap-35 mt-4 lg:mt-7 xl:mt-10 min-w-[320px] w-screen overflow-x-hidden">
+      <div className="mx-auto flex flex-col items-center justify-start gap-15 sm:gap-0.5  mt-4 lg:mt-7 xl:mt-10 min-w-[320px] w-screen overflow-x-hidden">
         <Navbar />
-        <Hero />
-        <Stack />
-        <Topproject />
-        <Contracts />
-        <Footer />
+        <div className="flex flex-col items-center justify-start gap-35 md:gap-40 lg:gap-45 min-w-[320px] w-screen overflow-x-hidden">
+          <Hero />
+          <Stack />
+          <Topproject />
+          <Contracts />
+          <Footer />
+        </div>
       </div>
     </>
   );

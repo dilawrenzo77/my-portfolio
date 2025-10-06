@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Navbar() {
     return(
         <nav className="mx-auto">
-            <div className="flex items-center justify-between gap-8 lg:gap-12">
+            <div className="flex items-center justify-center sm:justify-between gap-10 lg:gap-12 mx-auto flex-wrap">
                 <Link href="#stack">
                 <div className="group hover:bg-white/20 hover:border-b-1 hover:border-dashed hover:px-2 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
                     <p className="font-thin text-lg lg:text-xl 2xl:text-2xl">Stacks</p>
