@@ -51,15 +51,15 @@ const Projects = [
    },
    {
 	projectId:  5, 
-	projectName: "Apple.com Landing clone",
+	projectName: "Restaurant Landing Page",
 	projectTitle: "FrontEnd",
-	projectDescription: "apple.com landing page clone",
-    projectDetails: "This project is a simple non-responsive frontend clone of the Apple.com landing page, built using React. The goal of this project was to replicate the design and layout of Apple's official website while focusing on designing, clean code, and modern React practices. This is a purely frontend project, meaning no backend functionality is included.",
-    keyFeatures: ["Clean UI: The project precisely replicated the apple landing page UI"],
-	projectTools: ["React","CSS"],
-	projectThumbnail: "pro1.PNG",
-	projectLink: "https://lappclone.netlify.app",
-	projectGithub: "https://github.com/dilawrenzo77/apple-landing-page-clone-React"
-   }
+	projectDescription: "Restaurant's Landing Page",
+    projectDetails: "This is a personal project of a modern day restaurant landing page. It is a sleek,user friendly, responsive and modern day designed landing page.",
+    keyFeatures: ["Responsive design: designed to be responsive taking into consideration various device sizes"],
+	projectTools: ["React", "CSS"],
+	projectThumbnail: "pic1.PNG",
+	projectLink: "https://restaurantlanding7.netlify.app",
+	projectGithub: "https://github.com/dilawrenzo77/Modern-day-restaurant-Landing-page"
+}
 ];
 export default Projects;
