@@ -27,6 +27,18 @@ const Projects = [
    },
    {
 	projectId:  3, 
+	projectName: "RESTful Library API",
+	projectTitle: "BackEnd",
+	projectDescription: "A Library Management system with laravel",
+    projectDetails: "A comprehensive Laravel-based RESTful API for managing library operations.",
+    keyFeatures: ["Library Operations: including book cataloging, member management, borrowing system, and real-time analytics"],
+	projectTools: ["Laravel", "Postman"],
+	projectThumbnail: "lms.jpg",
+	projectLink: "https://github.com/dilawrenzo77/RESTful-API-Library-Management-System",
+	projectGithub: "https://github.com/dilawrenzo77/RESTful-API-Library-Management-System"
+	},
+	{
+	projectId:  4, 
 	projectName: "Exness Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "Exness Landing Page Clone",
@@ -38,7 +50,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Exness-Landing-Clone"
 	},
    {
-	projectId:  4, 
+	projectId:  5, 
 	projectName: "Binance Landing Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "A close clone of the Binance Finanace Front Page",
@@ -50,7 +62,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Binance-Landing-page-Clone"
    },
    {
-	projectId:  5, 
+	projectId:  6, 
 	projectName: "E-commerce Landing Page",
 	projectTitle: "FrontEnd",
 	projectDescription: "This is the Landing page of a Cologne company",
@@ -62,7 +74,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/LandingPage-for-a-Cologne-company"
    },
    {
-	projectId:  6, 
+	projectId:  7, 
 	projectName: "Restaurant Landing Page",
 	projectTitle: "FrontEnd",
 	projectDescription: "Restaurant's Landing Page",
