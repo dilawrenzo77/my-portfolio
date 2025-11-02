@@ -12,8 +12,21 @@ const Projects = [
 	projectLink: "https://real-time-collaborative-platform-hu-five.vercel.app/",
 	projectGithub: "https://github.com/dilawrenzo77/Real-time-Collaborative-Platform-HuddleUp-"
    },
-    {
+   {
 	projectId:  2, 
+	projectName: "Dolce&Gabbana Landing Clone",
+	projectTitle: "FrontEnd",
+	projectDescription: "A close Clone of D&G's landing page",
+    projectDetails: 
+        "A high-fidelity, responsive clone of the official Dolce & Gabbana landing page, built with modern web technologies to achieve a pixel-perfect and performant user experience.",
+    keyFeatures: ["Pixel-Perfect UI: Faithful recreation of the original Dolce & Gabbana design, including typography, colors, and spacing.", " Full Responsiveness: Optimized layout for desktop, tablet, and mobile devices using Tailwind CSS."],
+	projectTools: ["Next.js", "Tailwind"],
+	projectThumbnail: "DandG.png",
+	projectLink: "https://dolce-gabbana-landing-clone.vercel.app/",
+	projectGithub: "https://github.com/dilawrenzo77/Dolce-Gabbana-Landing-Clone"
+   },
+    {
+	projectId:  3, 
 	projectName: "E-commerce website",
 	projectTitle: "Full-Stack",
 	projectDescription: "This is a full-stack e-commerce website.",
@@ -26,7 +39,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Full-stack-e-commerce-website"
    },
    {
-	projectId:  3, 
+	projectId:  4, 
 	projectName: "RESTful Library API",
 	projectTitle: "BackEnd",
 	projectDescription: "A Library Management system with laravel",
@@ -38,7 +51,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/RESTful-API-Library-Management-System"
 	},
 	{
-	projectId:  4, 
+	projectId:  5, 
 	projectName: "Exness Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "Exness Landing Page Clone",
@@ -50,7 +63,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Exness-Landing-Clone"
 	},
    {
-	projectId:  5, 
+	projectId:  6, 
 	projectName: "Binance Landing Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "A close clone of the Binance Finanace Front Page",
@@ -62,7 +75,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Binance-Landing-page-Clone"
    },
    {
-	projectId:  6, 
+	projectId:  7, 
 	projectName: "E-commerce Landing Page",
 	projectTitle: "FrontEnd",
 	projectDescription: "This is the Landing page of a Cologne company",
@@ -74,7 +87,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/LandingPage-for-a-Cologne-company"
    },
    {
-	projectId:  7, 
+	projectId:  8, 
 	projectName: "Restaurant Landing Page",
 	projectTitle: "FrontEnd",
 	projectDescription: "Restaurant's Landing Page",
