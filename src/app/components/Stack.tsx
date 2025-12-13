@@ -6,9 +6,8 @@ import Tailwind from "../../../public/tailwind-svgrepo-com.svg";
 import PostGres from "../../../public/postgresql-logo-svgrepo-com.svg";
 import Laravel from "../../../public/laravel-svgrepo-com.svg";
 import Git from "../../../public/git-svgrepo-com.svg";
-import Solidity from "../../../public/Solidity--Streamline-Svg-Logos.svg";
-import MetaMask from "../../../public/metamask-icon.svg";
-import Hardhat from "../../../public/Hardhat-Icon--Streamline-Svg-Logos.svg";
+import Spring from "../../../public/spring-boot-icon.svg";
+import Docker from "../../../public/docker-icon.svg";
 import Image from 'next/image';
 
 
@@ -16,14 +15,13 @@ import Image from 'next/image';
 const items = [
   { icon: <Image src={Next} width={50} height={50} alt="stack images" className="object-cover"/>, color: 'gray', label: 'NextJs' },
   { icon: <Image src={React} width={50} height={50} alt="stack images" className="object-cover"/>, color: 'gray', label: 'React' },
+  { icon: <Image src={Spring} width={50} height={50} alt="stack images" className="object-cover"/>, color: 'gray', label: 'Spring' },
   { icon: <Image src={Node} width={50} height={50} alt="stack images" className="object-cover"/>, color: 'gray', label: 'NodeJS' },
   { icon: <Image src={Tailwind} width={50} height={50} alt="stack images" className="object-cover"/>, color: 'gray', label: 'TailwindCSS' },
   { icon: <Image src={PostGres} width={50} height={50} alt="stack images" className="object-cover"/>, color: 'gray', label: 'Postgres' },
   { icon: <Image src={Laravel} fill alt="stack images" className="object-cover"/>, color: 'gray', label: 'Laravel' },
   { icon: <Image src={Git} width={50} height={50} alt="stack images" className="object-cover"/>, color: 'gray', label: 'Git' },
-  { icon: <Image src={Solidity} width={50} height={50} alt="stack images" className="object-cover"/>, color: 'gray', label: 'Solidity' },
-  { icon: <Image src={MetaMask} width={50} height={50} alt="stack images" className="object-cover"/>, color: 'gray', label: 'MetaMask' },
-  { icon: <Image src={Hardhat} width={50} height={50}  alt="stack images" className="object-cover"/>, color: 'gray', label: 'HardHat' },
+  { icon: <Image src={Docker} width={50} height={50} alt="stack images" className="object-cover"/>, color: 'gray', label: 'Docker' }
 ]
 
 export default function Stack() {
