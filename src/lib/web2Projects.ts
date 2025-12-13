@@ -43,7 +43,7 @@ const Projects = [
 	projectName: "RESTful Library API",
 	projectTitle: "BackEnd",
 	projectDescription: "A Library Management system with laravel",
-    projectDetails: "A comprehensive Laravel-based RESTful API for managing library operations.",
+    projectDetails: "A comprehensive Laravel-based RESTful API for managing library operations including book cataloging, member management, borrowing system, and real-time analytics.",
     keyFeatures: ["Library Operations: including book cataloging, member management, borrowing system, and real-time analytics"],
 	projectTools: ["Laravel", "Postman"],
 	projectThumbnail: "lms.jpg",
