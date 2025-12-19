@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function Hero() {
     return(
         <section className="w-full flex items-center justify-center py-10 gap-5">
-            <div className="flex flex-col items-center justify-center gap-6 sm:gap-5 lg:gap-7 xl:gap-10 w-fit">
+            <div className="flex flex-col items-center justify-center gap-6 sm:gap-5 lg:gap-7 xl:gap-10 w-fit px-1.5">
                 <p className="text-center text-md lg:text-lg xl:text-xl font-thin">I&apos;m</p>
                 <p className="text-center text-4xl tracking-widest xl:text-6xl font-bold">MBATA LAWRENCE CHIBUZOR</p>
-                <p className="text-center text-md lg:text-lg xl:text-xl font-thin ">Full-Stack Web/Ethereum Developer</p>
-                <p className="text-center text-sm lg:text-lg xl:text-xl font-thin">&#91; <span className="text-center font-semibold text-md lg:text-lg xl:text-xl text-neutral-400">FrontEnd, BackEnd, Smart Contracts, dApps</span> &#93;</p>
+                <p className="text-center text-md lg:text-lg xl:text-xl font-thin ">Full-Stack Web Developer</p>
+                <p className="text-center text-sm lg:text-lg xl:text-xl font-thin">&#91; <span className="text-center font-semibold text-md lg:text-lg xl:text-xl text-neutral-400">Java, Javascript, PHP, HTML, CSS</span> &#93;</p>
                 <Link href="/webMbataLawrence.pdf" download="mbatalawrenceResume.pdf">
                     <button className="bg-neutral-600 rounded-full px-5 py-2 text-md lg:text-lg xl:text-xl hover:scale-110 transition-all duration-300 border-2 border-white/50">Download CV</button>
                 </Link>

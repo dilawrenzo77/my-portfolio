@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Stack from "./components/Stack";
 import Topproject from "./components/Topproject";
-import Contracts from "./components/Contracts";
+import Contacts from "./components/Contracts";
 import Footer from "./components/Footer";
 
 
@@ -15,7 +15,7 @@ export default function Home() {
           <Hero />
           <Stack />
           <Topproject />
-          <Contracts />
+          <Contacts />
           <Footer />
         </div>
       </div>
