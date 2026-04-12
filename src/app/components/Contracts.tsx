@@ -2,7 +2,6 @@
 import { FiInstagram } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa";
 import Link from "next/link";
 import Form from "./Form";
 

@@ -4,33 +4,35 @@ import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 
 const Form = () => {
-  const formRef = useRef();
+  // Fix: Add HTMLFormElement type to useRef
+  const formRef = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
+  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
 
-  const sendEmail = (e) => {
+  // Fix: Type the event parameter
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
 
+    // Fix: Check if formRef.current exists and is an HTMLFormElement
+    if (!formRef.current) {
+      console.error('Form reference is not available');
+      setIsSubmitting(false);
+      return;
+    }
+
     emailjs.sendForm(
-      process.env.NEXT_PUBLIC_SERVICE_ID,
-      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      process.env.NEXT_PUBLIC_SERVICE_ID as string,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
       formRef.current,
-      process.env.NEXT_PUBLIC_PUBLIC_KEY
+      process.env.NEXT_PUBLIC_PUBLIC_KEY as string
     )
     .then((result) => {
       console.log('Success:', result.text);
       setSubmitStatus('success');
-      // Manual reset instead of formRef.current.reset()
-      formRef.current.reset();
-      // Clear any remaining values
-      const formElements = formRef.current.elements;
-      for (let i = 0; i < formElements.length; i++) {
-        if (formElements[i].type === 'text' || formElements[i].type === 'email' || formElements[i].tagName === 'TEXTAREA') {
-          formElements[i].value = '';
-        }
-      }
+      // Reset the form
+      formRef.current?.reset();
     }, (error) => {
       console.log('Failed:', error.text);
       setSubmitStatus('error');
@@ -47,15 +49,15 @@ const Form = () => {
         <form className="form" ref={formRef} onSubmit={sendEmail}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="user_name" required />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="user_email" required />
           </div>
           <div className="form-group">
-            <label htmlFor="textarea">How Can We Help You?</label>
-            <textarea name="textarea" id="textarea" rows={10} cols={50} required defaultValue="" /> {/* Removed spaces */}
+            <label htmlFor="message">How Can We Help You?</label>
+            <textarea name="message" id="message" rows={10} cols={50} required defaultValue="" />
           </div>
           <button className="form-submit-btn" type="submit" disabled={isSubmitting}>
             {isSubmitting ? 'Sending...' : 'Submit'}

@@ -38,7 +38,7 @@ const ClientOnly = ({ children }: { children: React.ReactNode }) => {
 
 
 export default function ProCard({ data, className }: ProCardProps & { className?: string }) {
-  const cardRef = useRef(null);
+  const cardRef = useRef<HTMLDivElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const card = cardRef.current;
@@ -57,7 +57,7 @@ export default function ProCard({ data, className }: ProCardProps & { className?
     card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1, 1, 1)`;
   };
   
-  const handleMouseLeave = (e) => {
+  const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
     const card = cardRef.current;
     if (!card) return;
     card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';

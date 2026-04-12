@@ -1,13 +1,15 @@
 "use client"
 import React, { useRef } from 'react';
 import styled from 'styled-components';
-import { About } from '../types/data';
+import type { CardProps } from "../../types/data";
 import Image from "next/image";
 
 const Card: React.FC<CardProps> = ({ name, description, image }) => {
-  const cardRef = useRef(null);
+  // Fix: Add HTMLDivElement type to useRef
+  const cardRef = useRef<HTMLDivElement>(null);
 
-  const handleMouseMove = (e) => {
+  // Fix: Type the event as React.MouseEvent
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const card = cardRef.current;
     if (!card) return;
     
@@ -18,13 +20,14 @@ const Card: React.FC<CardProps> = ({ name, description, image }) => {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
     
-    const rotateX = ((y - centerY) / centerY) * 10; // Max 10deg tilt
-    const rotateY = ((x - centerX) / centerX) * 10; // Max 10deg tilt
+    const rotateX = ((y - centerY) / centerY) * 10;
+    const rotateY = ((x - centerX) / centerX) * 10;
     
     card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1, 1, 1)`;
   };
   
-  const handleMouseLeave = (e) => {
+  // Fix: Type the event as React.MouseEvent
+  const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
     const card = cardRef.current;
     if (!card) return;
     card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
