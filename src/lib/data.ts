@@ -1,5 +1,5 @@
-import About from "../app/components/types/data";
-import Skill from "../app/components/types/data";
+import type { About } from "../types/data";
+import type { Skill } from "../types/data";
 
 
 export const AboutData: About[] = [
