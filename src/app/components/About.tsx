@@ -1,7 +1,7 @@
 "use client"
 import Card from "./Card";
 import { AboutData } from "../../lib/data";
-import { About } from "../../types/data";
+import type { About } from "../../types/data";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
