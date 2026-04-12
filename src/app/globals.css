@@ -31,6 +31,14 @@
   border-image-slice: 1; /* Ensures the gradient covers the full border */
 }
 
+
+.border-l-gradient {
+  border-left: 4px solid;
+  border-image: linear-gradient(to bottom, #915eff, rgba(145, 94, 255, 0.5), transparent);
+  border-image-slice: 1;
+}
+
+
 .glassmorphism {
 	background: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(10px) saturate(180%);
@@ -38,6 +46,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: var(--font-space-mono), sans-serif;
   margin: 0;
