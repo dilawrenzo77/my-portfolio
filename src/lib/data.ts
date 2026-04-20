@@ -62,9 +62,9 @@ export const Skills: Skill[] = [
         image: "/spring-boot-icon.svg"
     },
     {
-        name: "FastAPI",
+        name: "Hibernate",
         category: "Backend",
-        image: "/fastapi-svgrepo-com.svg"
+        image: "/hibernate.svg"
     },
     {
         name: "Kafka",
