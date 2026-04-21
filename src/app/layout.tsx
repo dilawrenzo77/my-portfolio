@@ -11,7 +11,7 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: 'Portfolio',
-  description: "An Ethereum Developer Portfolio website"
+  description: "A Full Stack Developer Portfolio"
 };
 
 export default function RootLayout({
