@@ -2,6 +2,30 @@
 const Projects = [
 	{
 	projectId:  1, 
+	projectName: "Robust E-commerce Platform",
+	projectTitle: "Full-Stack/microservice",
+	projectDescription: "A production-ready, modern e-commerce platform with different micro-service Nodejs backends",
+    projectDetails: "A production-ready, modern e-commerce platform with different micro-service Nodejs backends, that handles payments and products individually.",
+	projectTools: ["NextJs", "Express", "Hono","tailwind","..."],
+    keyFeatures: ["Micro-service: engineered with seperate backend service for payment and products","Responsive design: designed to be responsive taking into consideration various device sizes"],
+	projectThumbnail: "octo.PNG",
+	projectLink: "https://e-commerce-client-fawn.vercel.app/",
+	projectGithub: "https://github.com/dilawrenzo77/E-commerce-Client"
+   },
+   {
+	projectId:  2, 
+	projectName: "Medical Management System",
+	projectTitle: "Backend",
+	projectDescription: "A Robust backend medical management system",
+    projectDetails: "A robust, production-ready RESTful API for managing medical facilities, patients, staff, appointments, prescriptions, laboratory results, and healthcare analytics.",
+	projectTools: ["NodeJS", "Express", "Prisma", "JWT"],
+    keyFeatures: ["JWT Authentication", "Role-based access control", "Comprehensive CRUD Operation", "Advanced filtering and pagination"],
+	projectThumbnail: "medical.jpg",
+	projectLink: "https://medical-management-system-w7uf.onrender.com/api-docs/",
+	projectGithub: "https://github.com/dilawrenzo77/Medical-Management-System"
+   },
+	{
+	projectId:  3, 
 	projectName: "RealTime Collaborative Platform",
 	projectTitle: "Full-Stack",
 	projectDescription: "A real time communication platform for a software development team",
@@ -13,7 +37,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Real-time-Collaborative-Platform-HuddleUp-"
    },
    {
-	projectId:  2, 
+	projectId:  4, 
 	projectName: "Dolce&Gabbana Landing Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "A close Clone of D&G's landing page",
@@ -26,7 +50,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Dolce-Gabbana-Landing-Clone"
    },
     {
-	projectId:  3, 
+	projectId:  5, 
 	projectName: "E-commerce website",
 	projectTitle: "Full-Stack",
 	projectDescription: "This is a full-stack e-commerce website.",
@@ -38,20 +62,8 @@ const Projects = [
 	projectLink: "https://full-stack-e-commerce-website-blue.vercel.app/",
 	projectGithub: "https://github.com/dilawrenzo77/Full-stack-e-commerce-website"
    },
-   {
-	projectId:  4, 
-	projectName: "RESTful Library API",
-	projectTitle: "BackEnd",
-	projectDescription: "A Library Management system with laravel",
-    projectDetails: "A comprehensive Laravel-based RESTful API for managing library operations including book cataloging, member management, borrowing system, and real-time analytics.",
-    keyFeatures: ["Library Operations: including book cataloging, member management, borrowing system, and real-time analytics"],
-	projectTools: ["Laravel", "Postman"],
-	projectThumbnail: "lms.jpg",
-	projectLink: "https://github.com/dilawrenzo77/RESTful-API-Library-Management-System",
-	projectGithub: "https://github.com/dilawrenzo77/RESTful-API-Library-Management-System"
-	},
 	{
-	projectId:  5, 
+	projectId:  6, 
 	projectName: "Exness Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "Exness Landing Page Clone",
@@ -63,7 +75,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Exness-Landing-Clone"
 	},
    {
-	projectId:  6, 
+	projectId:  7, 
 	projectName: "Binance Landing Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "A close clone of the Binance Finanace Front Page",
@@ -75,7 +87,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Binance-Landing-page-Clone"
    },
    {
-	projectId:  7, 
+	projectId:  8, 
 	projectName: "E-commerce Landing Page",
 	projectTitle: "FrontEnd",
 	projectDescription: "This is the Landing page of a Cologne company",
@@ -85,18 +97,6 @@ const Projects = [
 	projectThumbnail: "vex1.PNG",
 	projectLink: "https://colognelanding.netlify.app",
 	projectGithub: "https://github.com/dilawrenzo77/LandingPage-for-a-Cologne-company"
-   },
-   {
-	projectId:  8, 
-	projectName: "Restaurant Landing Page",
-	projectTitle: "FrontEnd",
-	projectDescription: "Restaurant's Landing Page",
-    projectDetails: "This is a personal project of a modern day restaurant landing page. It is a sleek,user friendly, responsive and modern day designed landing page.",
-    keyFeatures: ["Responsive design: designed to be responsive taking into consideration various device sizes"],
-	projectTools: ["React", "CSS"],
-	projectThumbnail: "pic1.PNG",
-	projectLink: "https://restaurantlanding7.netlify.app",
-	projectGithub: "https://github.com/dilawrenzo77/Modern-day-restaurant-Landing-page"
-}
+   }
 ];
 export default Projects;

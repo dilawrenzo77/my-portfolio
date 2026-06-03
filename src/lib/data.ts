@@ -5,12 +5,12 @@ import type { Skill } from "../types/data";
 export const AboutData: About[] = [
     {
         name: "Full Stack Applications",
-        description: "End-to-end Web solutions",
+        description: "End-to-end Web/Mobile solutions",
         image: "/pic2.png"
     },
     {
         name: "Scalable Backend Systems",
-        description: "Microservices and APIs",
+        description: "System Design and APIs",
         image: "/pic3.png"
     },
     {
@@ -20,7 +20,7 @@ export const AboutData: About[] = [
     },
     {
         name: "AI and Automation",
-        description: "Agentic AI Solutions",
+        description: "AI Integration",
         image: "/pic4.png"
     }
 ]
@@ -72,6 +72,16 @@ export const Skills: Skill[] = [
         image: "/kafka-icon-svgrepo-com.svg"
     },
     {
+        name: "React Native",
+        category: "Mobile",
+        image: "/react-svgrepo-com.svg"
+    },
+    {
+        name: "Expo",
+        category: "Mobile",
+        image: "/expo-svgrepo-com.svg"
+    },
+    {
         name: "Postgres",
         category: "Database",
         image: "/postgresql-logo-svgrepo-com.svg"
@@ -92,7 +102,7 @@ export const Skills: Skill[] = [
         image: "/docker-icon.svg"
     },
     {
-        name: "Agentic SDK",
+        name: "AI Integration",
         category: "AI",
         image: "/sdk-monitor-svgrepo-com.svg"
     },

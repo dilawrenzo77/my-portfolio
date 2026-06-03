@@ -152,6 +152,28 @@ export default function Stack() {
                         ))}
                     </div>
                 </div>
+                
+                {/* Mobile Section */}
+                <div className="skill-section w-full flex flex-col justify-start gap-10">
+                    <div className="section-heading flex items-center gap-5">
+                        <span className="block w-8 bg-indigo-500 rounded-full h-0.5"></span>
+                        <p className="text-lg text-indigo-500">Mobile</p>
+                        <span className="block w-full h-px bg-white/[0.07]"></span>
+                    </div>
+
+                    <div className="w-full flex flex-wrap items-center gap-15">
+                        {Skills.map((item: Skill) => (
+                            (item.category === "Mobile" && 
+                                <div key={item.name} className="skill-item">
+                                    <Cube 
+                                        name={item.name}
+                                        image={item.image}
+                                    />
+                                </div>
+                            )
+                        ))}
+                    </div>
+                </div>
 
                 {/* Databases Section */}
                 <div className="skill-section w-full flex flex-col justify-start gap-10">

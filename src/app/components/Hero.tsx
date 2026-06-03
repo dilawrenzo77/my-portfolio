@@ -94,7 +94,7 @@ export default function Hero() {
 
   const [displayMessage, setDisplayMessage] = useState("Frontend");
   const [isAnimating, setIsAnimating] = useState(false);
-  const messages = ["Frontend", "Backend", "Micro-services Architecture", "AI"];
+  const messages = ["Frontend", "Backend", "Mobile Apps" ,"Micro-services", "AI", "System-Design"];
   const messageIndexRef = useRef(0);
 
   useEffect(() => {
@@ -115,7 +115,7 @@ export default function Hero() {
     <section className="w-full xl:w-[90vw] flex flex-col md:flex-row items-start justify-center gap-15 md:gap-6 min-h-screen py-10 px-3 md:px-1">
       <div className="flex flex-col items-start justify-center gap-6 sm:gap-5 lg:gap-7 xl:gap-10 w-full border-l-gradient pl-5">
         <p className="text-4xl tracking-widest xl:text-6xl font-bold text-white">I Build Software <br /><span className="text-[#915eff]">That Scales</span></p>
-        <p className="text-sm lg:text-lg xl:text-xl font-thin text-gray-300">Full Stack Developer turning complex ideas into <span className="text-[#915eff]">production-grade</span> applications with AI, microservices & modern architecture.</p>
+        <p className="text-sm lg:text-lg xl:text-xl font-thin text-gray-300">Full Stack Software Developer turning complex ideas into <span className="text-[#915eff]">production-grade</span> applications with modern architecture, system design, microservices and AI.</p>
 
         {/* Simple Conveyor Belt */}
         <div className="min-h-[30px]">

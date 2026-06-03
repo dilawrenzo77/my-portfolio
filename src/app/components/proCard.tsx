@@ -75,7 +75,7 @@ export default function ProCard({ data, className }: ProCardProps & { className?
         }}
       >
         <div className="flex flex-col h-[27rem]">
-        <Link href={data.projectLink} className="block h-full ">
+        <div className="block h-full ">
             <div className="flex flex-col gap-5 rounded-xl bg-[#450693]/10 h-full">
             {/* Image container - fixed height */}
             <div className="relative w-full h-48 rounded-lg overflow-hidden">
@@ -135,11 +135,21 @@ export default function ProCard({ data, className }: ProCardProps & { className?
             </div>
             
             {/* View project link */}
-            <p className="mb-2 flex items-center gap-1 text-sm font-medium hover:text-teal-300 transition-colors duration-300 px-2">
-                view project <ArrowRight size={10} />
-            </p>
+
+            <div className="flex items-center justify-between w-full">
+                <Link href={data.projectLink}>
+                    <p className="mb-2 flex items-center gap-1 text-sm font-medium hover:text-teal-300 transition-colors duration-300 px-2">
+                    view project <ArrowRight size={10} />
+                    </p>
+                </Link>
+                <Link href={data.projectGithub}>
+                    <p className="mb-2 flex items-center gap-1 text-sm font-medium hover:text-teal-300 transition-colors duration-300 px-2">
+                    view github <ArrowRight size={10} />
+                    </p>
+                </Link>
             </div>
-        </Link>
+            </div>
+        </div>
         </div>
     </div>
   );
