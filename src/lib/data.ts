@@ -5,7 +5,7 @@ import type { Skill } from "../types/data";
 export const AboutData: About[] = [
     {
         name: "Full Stack Applications",
-        description: "End-to-end Web/Mobile solutions",
+        description: "End-to-end solutions",
         image: "/pic2.png"
     },
     {
@@ -19,7 +19,7 @@ export const AboutData: About[] = [
         image: "/pic1.png"
     },
     {
-        name: "AI and Automation",
+        name: "AI",
         description: "AI Integration",
         image: "/pic4.png"
     }
@@ -70,16 +70,6 @@ export const Skills: Skill[] = [
         name: "Kafka",
         category: "Backend",
         image: "/kafka-icon-svgrepo-com.svg"
-    },
-    {
-        name: "React Native",
-        category: "Mobile",
-        image: "/react-svgrepo-com.svg"
-    },
-    {
-        name: "Expo",
-        category: "Mobile",
-        image: "/expo-svgrepo-com.svg"
     },
     {
         name: "Postgres",

@@ -26,6 +26,18 @@ const Projects = [
    },
 	{
 	projectId:  3, 
+	projectName: "DeFi Landing Page",
+	projectTitle: "Frontend",
+	projectDescription: "A modern, responsive DeFi (Decentralized Finance) landing page built with Next.js and Tailwind CSS",
+    projectDetails: "A modern, responsive DeFi (Decentralized Finance) landing page built with Next.js and Tailwind CSS, with clean, professional DeFi-themed interface and blockchain/crypto asthetics",
+	projectTools: ["React", "Express", "tailwind","Socket.io"],
+    keyFeatures: ["Responsive design: designed to be responsive taking into consideration various device sizes"],
+	projectThumbnail: "defi1.PNG",
+	projectLink: "https://de-fi-landing-page.vercel.app/",
+	projectGithub: "https://github.com/dilawrenzo77/DeFi-Landing-Page"
+   },
+   {
+	projectId:  4, 
 	projectName: "RealTime Collaborative Platform",
 	projectTitle: "Full-Stack",
 	projectDescription: "A real time communication platform for a software development team",
@@ -37,7 +49,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Real-time-Collaborative-Platform-HuddleUp-"
    },
    {
-	projectId:  4, 
+	projectId:  5, 
 	projectName: "Dolce&Gabbana Landing Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "A close Clone of D&G's landing page",
@@ -50,20 +62,20 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Dolce-Gabbana-Landing-Clone"
    },
     {
-	projectId:  5, 
-	projectName: "E-commerce website",
-	projectTitle: "Full-Stack",
-	projectDescription: "This is a full-stack e-commerce website.",
+	projectId:  6, 
+	projectName: "A Hospital Dashboard",
+	projectTitle: "Frontend",
+	projectDescription: "This is a Frontend dashboard for a hopistal managment system.",
     projectDetails: 
-        "This project is comprised of a visually appealing frontend and a small scale backend end for data functionality. This project fully utilizes the performance, routing, route handlers(to handle the backend) and context api provided by next.js",
+        "A modern, comprehensive hospital management dashboard built with Next.js, Tailwind CSS, and shadcn/ui components to achieve a pixel-perfect and performant user experience.",
     keyFeatures: ["Cart Functionality: The app has a cart functionality, ability to add products to cart, increase the amount of products, remove the product, calculate the amount of the total products in the cart etc.", "Responsive Design: The project is made suitable for various devices, from mobile to extra-large screens."],
-	projectTools: ["Next.js", "Tailwind", "Postgres"],
-	projectThumbnail: "v1.PNG",
-	projectLink: "https://full-stack-e-commerce-website-blue.vercel.app/",
-	projectGithub: "https://github.com/dilawrenzo77/Full-stack-e-commerce-website"
+	projectTools: ["Next.js", "Tailwind"],
+	projectThumbnail: "dah.PNG",
+	projectLink: "https://hospital-dashboard-he72.vercel.app/",
+	projectGithub: "https://github.com/dilawrenzo77/Hospital-Dashboard"
    },
 	{
-	projectId:  6, 
+	projectId:  7, 
 	projectName: "Exness Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "Exness Landing Page Clone",
@@ -75,7 +87,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Exness-Landing-Clone"
 	},
    {
-	projectId:  7, 
+	projectId:  8, 
 	projectName: "Binance Landing Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "A close clone of the Binance Finanace Front Page",
@@ -87,7 +99,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Binance-Landing-page-Clone"
    },
    {
-	projectId:  8, 
+	projectId:  9, 
 	projectName: "E-commerce Landing Page",
 	projectTitle: "FrontEnd",
 	projectDescription: "This is the Landing page of a Cologne company",

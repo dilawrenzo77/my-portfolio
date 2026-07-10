@@ -154,7 +154,7 @@ export default function Stack() {
                 </div>
                 
                 {/* Mobile Section */}
-                <div className="skill-section w-full flex flex-col justify-start gap-10">
+                {/* <div className="skill-section w-full flex flex-col justify-start gap-10">
                     <div className="section-heading flex items-center gap-5">
                         <span className="block w-8 bg-indigo-500 rounded-full h-0.5"></span>
                         <p className="text-lg text-indigo-500">Mobile</p>
@@ -173,7 +173,7 @@ export default function Stack() {
                             )
                         ))}
                     </div>
-                </div>
+                </div> */}
 
                 {/* Databases Section */}
                 <div className="skill-section w-full flex flex-col justify-start gap-10">
