@@ -32,7 +32,7 @@ const Projects = [
     projectDetails: "A modern, responsive DeFi (Decentralized Finance) landing page built with Next.js and Tailwind CSS, with clean, professional DeFi-themed interface and blockchain/crypto asthetics",
 	projectTools: ["React", "Express", "tailwind","Socket.io"],
     keyFeatures: ["Responsive design: designed to be responsive taking into consideration various device sizes"],
-	projectThumbnail: "defi1.PNG",
+	projectThumbnail: "defi1.png",
 	projectLink: "https://de-fi-landing-page.vercel.app/",
 	projectGithub: "https://github.com/dilawrenzo77/DeFi-Landing-Page"
    },
@@ -70,7 +70,7 @@ const Projects = [
         "A modern, comprehensive hospital management dashboard built with Next.js, Tailwind CSS, and shadcn/ui components to achieve a pixel-perfect and performant user experience.",
     keyFeatures: ["Cart Functionality: The app has a cart functionality, ability to add products to cart, increase the amount of products, remove the product, calculate the amount of the total products in the cart etc.", "Responsive Design: The project is made suitable for various devices, from mobile to extra-large screens."],
 	projectTools: ["Next.js", "Tailwind"],
-	projectThumbnail: "dah.PNG",
+	projectThumbnail: "dah.png",
 	projectLink: "https://hospital-dashboard-he72.vercel.app/",
 	projectGithub: "https://github.com/dilawrenzo77/Hospital-Dashboard"
    },
