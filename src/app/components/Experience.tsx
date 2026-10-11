@@ -98,7 +98,7 @@ export default function Experience() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-start gap-4 w-full bg-[#211832] rounded-lg border border-white/[0.10] px-5 py-2">
+            {/* <div className="flex flex-col items-start gap-4 w-full bg-[#211832] rounded-lg border border-white/[0.10] px-5 py-2">
                 <div className="flex flex-col items-start gap-4">
                     <p className="text-xs p-2 rounded-lg bg-[#915eff]/10 backdrop-blur-lg text-white/40 ">100% Client Satisfaction rate</p>
                     <div>
@@ -114,7 +114,7 @@ export default function Experience() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="flex flex-col items-start gap-4 w-full bg-[#211832] rounded-lg border border-white/[0.10] px-5 py-2">
                 <div className="flex flex-col items-start gap-4">
                     <p className="text-xs p-2 rounded-lg bg-[#915eff]/10 backdrop-blur-lg text-white/40 ">100% Client Satisfaction rate</p>

@@ -1,8 +1,8 @@
 "use client"
 import Link from "next/link";
-import Terminal, { ColorMode, TerminalOutput } from 'react-terminal-ui';
 import React, { useState, useEffect, useRef } from 'react';
 import { Download, ArrowRight } from "lucide-react";
+import BorderGlow from "./BorderGlow";
 
 const profileData = {
   "name": "Mbata Lawrence Chibuzor",
@@ -13,85 +13,8 @@ const profileData = {
   "available": true
 };
 
-// Type-safe syntax highlighting function with multi-line formatting
-const highlightJSON = (obj: any, indent: number = 0): React.ReactNode => {
-  const spaces = ' '.repeat(indent);
-  
-  if (Array.isArray(obj)) {
-    return (
-      <span>
-        [<span style={{ color: '#32cd32' }}>
-          {obj.map((item: any, i: number) => (
-            <span key={i}>
-              {highlightJSON(item, 0)}
-              {i < obj.length - 1 && ', '}
-            </span>
-          ))}
-        </span>]
-      </span>
-    );
-  }
-  
-  if (typeof obj === 'object' && obj !== null) {
-    const entries = Object.entries(obj);
-    return (
-      <span>
-        {'{\n'}
-        {entries.map(([key, value]: [string, any], i: number) => (
-          <span key={key}>
-            {spaces}  <span style={{ color: '#00f7ff' }}>"{key}"</span>
-            <span style={{ color: '#ffffff' }}>: </span>
-            {highlightJSON(value, indent + 2)}
-            {i < entries.length - 1 ? ',' : ''}
-            {'\n\n'}
-          </span>
-        ))}
-        {spaces}{'}'}
-      </span>
-    );
-  }
-  
-  if (typeof obj === 'string') {
-    return <span style={{ color: '#32cd32' }}>"{obj}"</span>;
-  }
-  
-  if (typeof obj === 'number') {
-    return <span style={{ color: '#32cd32' }}>{obj}</span>;
-  }
-  
-  if (typeof obj === 'boolean') {
-    return <span style={{ color: '#ff8c42' }}>{obj.toString()}</span>;
-  }
-  
-  return <span>{String(obj)}</span>;
-};
 
 export default function Hero() {
-  const terminalContent = [
-    <TerminalOutput key="1">
-      <span style={{ color: '#32cd32' }}>$</span>{' '}
-      <span style={{ color: '#948979' }}>cat</span>
-      <span style={{ color: '#FFD400' }}>profile.json</span>
-    </TerminalOutput>,
-    <TerminalOutput key="2">
-      <pre style={{ margin: 0, fontFamily: 'inherit', whiteSpace: 'pre-wrap', lineHeight: '1.1' }}>
-        {highlightJSON(profileData)}
-      </pre>
-    </TerminalOutput>,
-    <TerminalOutput key="3">
-      <span style={{ color: '#32cd32', display: 'inline-flex', alignItems: 'center' }}>
-        $ <span style={{ 
-          display: 'inline-block', 
-          width: '10px', 
-          height: '20px', 
-          backgroundColor: '#32cd32',
-          marginLeft: '4px',
-          animation: 'blink 1s step-end infinite'
-        }} />
-      </span>
-    </TerminalOutput>,
-  ];
-
   const [displayMessage, setDisplayMessage] = useState("Frontend");
   const [isAnimating, setIsAnimating] = useState(false);
   const messages = ["Frontend", "Backend", "Mobile Apps" ,"Micro-services", "AI", "System-Design"];
@@ -105,17 +28,17 @@ export default function Hero() {
         messageIndexRef.current = (messageIndexRef.current + 1) % messages.length;
         setDisplayMessage(messages[messageIndexRef.current]);
         setIsAnimating(false);
-      }, 5000);
+      }, 8000);
     }, 3000);
 
     return () => clearInterval(interval);
   }, [messages.length]);
 
   return (
-    <section className="w-full xl:w-[90vw] flex flex-col md:flex-row items-start justify-center gap-15 md:gap-6 min-h-screen py-10 px-3 md:px-1">
-      <div className="flex flex-col items-start justify-center gap-6 sm:gap-5 lg:gap-7 xl:gap-10 w-full border-l-gradient pl-5">
-        <p className="text-4xl tracking-widest xl:text-6xl font-bold text-white">I Build Software <br /><span className="text-[#915eff]">That Scales</span></p>
-        <p className="text-sm lg:text-lg xl:text-xl font-thin text-gray-300">Full Stack Software Developer turning complex ideas into <span className="text-[#915eff]">production-grade</span> applications with modern architecture, system design, microservices and AI.</p>
+    <section className="w-full xl:w-[90vw] flex flex-col md:flex-row items-center justify-center gap-15 md:gap-6 min-h-screen py-10 px-3 md:px-1">
+      <div className="w-full md:w-7/12 flex flex-col items-center md:items-start justify-center gap-6 sm:gap-5 lg:gap-7 xl:gap-10 border-l-gradient pl-5">
+        <p className="text-4xl text-center md:text-start tracking-widest xl:text-6xl font-bold text-white">I Build Software <br /><span className="text-[#915eff]">That Scales</span></p>
+        <p className="text-sm text-center md:text-start lg:text-lg xl:text-xl font-thin text-gray-300">Full Stack Software Developer turning complex ideas into <span className="text-[#915eff]">production-grade</span> applications with modern architecture, system design, microservices and AI.</p>
 
         {/* Simple Conveyor Belt */}
         <div className="min-h-[30px]">
@@ -129,7 +52,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="w-full flex items-center justify-start gap-4 flex-wrap">
+        <div className="w-full flex items-center justify-center  md:justify-start gap-4 flex-wrap">
             <Link href="#projects">
                 <button className="bg-gradient-to-r from-purple-400/80 via-pink-400/80 to-blue-400/80 rounded-lg px-7 py-2 text-md lg:text-lg xl:text-xl hover:scale-105 transition-all duration-300 border border-white/[0.10] text-white flex items-center gap-2">View my Projects <span><ArrowRight size={15}/></span></button>
             </Link>
@@ -158,55 +81,50 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="container rounded-lg overflow-hidden h-[34rem] border border-white/[0.10]" style={{ maxWidth: '500px', margin: '0 auto' }}>
-        <div className="text-2xl" style={{ backgroundColor: '#09122C' }}>
-          <Terminal
-            name="~/mbatalawrence"
-            colorMode={ColorMode.Dark}
-          >
-            {terminalContent.map((content, index) => (
-              <div key={index} className="mb-2">
-                {content}
-              </div>
-            ))}
-          </Terminal>
+
+      
+      <BorderGlow
+        edgeSensitivity={30}
+        glowColor="40 80 80"
+        backgroundColor="#120F17"
+        borderRadius={28}
+        glowRadius={40}
+        glowIntensity={1}
+        coneSpread={25}
+        animated
+        className="grow"
+        colors={['#c084fc', '#f472b6', '#38bdf8']}
+      >
+        <div style={{ padding: '2em' }} className="w-full flex flex-col items-start gap-6">
+          <div className="flex items-center justify-between gap-2 w-full">
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full bg-red-500 shadow-[0_0_5px_2px_rgba(239,68,68,0.7)]"></div>
+              <div className="w-3 h-3 rounded-full bg-amber-500 shadow-[0_0_5px_2px_rgba(245,158,11,0.7)]"></div>
+              <div className="w-3 h-3 rounded-full bg-teal-500 shadow-[0_0_5px_2px_rgba(20,184,166,0.7)]"></div>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-600 opacity-50"></span>
+              </span>
+              <p className="text-xs text-gray-500">LIVE TERMINAL</p>
+            </div>
+          </div>
+          <div className="h-px w-full bg-white/20" />   
+          <div className="w-full">
+            <p className="text-xs sm:text-sm xl:text-md opacity-80"><span className="text-purple-400">const</span> Developer = <span>&#123;</span></p>
+            <p className="text-xs sm:text-sm 2xl:text-md"><span>&nbsp;</span><span>&nbsp;</span>&apos;name&apos;: <span className="text-emerald-300 ">&apos;Mbata Lawrence Chibuzor&apos;</span>,</p>
+            <p className="text-xs sm:text-sm 2xl:text-md mt-1"><span>&nbsp;</span><span>&nbsp;</span>&apos;role&apos;: <span className="text-emerald-300">&apos;Full Stack&apos;</span>,</p>
+            <p className="text-xs sm:text-sm 2xl:text-md mt-1"><span>&nbsp;</span><span>&nbsp;</span>&apos;languages&apos;: [<span className="text-emerald-300">&apos;Java&apos;, &apos;JavaScript&apos;]</span>,</p>
+            <p className="text-xs sm:text-sm 2xl:text-md mt-1"><span>&nbsp;</span><span>&nbsp;</span>&apos;stack&apos;: [<span className="text-emerald-300">&apos;PERN&apos;, &apos;SpringBoot&apos;]</span>,</p>
+            <p className="text-xs sm:text-sm 2xl:text-md mt-1"><span>&nbsp;</span><span>&nbsp;</span>&apos;passion&apos;: <span className="text-emerald-300">&apos;Building&apos;</span>,</p>
+            <p className="text-xs sm:text-sm 2xl:text-md mt-1"><span>&nbsp;</span><span>&nbsp;</span>&apos;available&apos;: <span className="text-emerald-300">true</span></p>
+          <p><span>&#125;</span>;</p>
+          </div>
+
+          <p className="text-xs sm:text-sm xl:text-md">Developer.<span className="opacity-60">fullStack<span>&#40;&#41;</span></span></p>
         </div>
-      </div>
-      <style jsx>{`
-        @keyframes blink {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0; }
-        }
-        
-        /* Force all terminal elements to use the dark background */
-        :global(.react-terminal-container),
-        :global(.react-terminal),
-        :global(.react-terminal-wrapper),
-        :global(.react-terminal-header),
-        :global(.react-terminal-content),
-        :global(.terminal),
-        :global(.terminal-container),
-        :global([class*="terminal"]) {
-          background-color: #0c0918 !important;
-        }
-        
-        /* Target the header specifically */
-        :global(.react-terminal-header),
-        :global(.react-terminal-header > *),
-        :global(.terminal-header),
-        :global([class*="header"]) {
-          background-color: #0c0918 !important;
-        }
-        
-        /* Target the body/content area */
-        :global(.react-terminal-line),
-        :global(.react-terminal-output),
-        :global(.terminal-output),
-        :global([class*="output"]),
-        :global([class*="content"]) {
-          background-color: #0c0918 !important;
-        }
-      `}</style>
+      </BorderGlow>
     </section>
   );
 }

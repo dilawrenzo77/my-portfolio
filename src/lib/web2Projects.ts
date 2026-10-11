@@ -24,8 +24,32 @@ const Projects = [
 	projectLink: "https://medical-management-system-w7uf.onrender.com/api-docs/",
 	projectGithub: "https://github.com/dilawrenzo77/Medical-Management-System"
    },
-	{
+   {
 	projectId:  3, 
+	projectName: "URL Shortener",
+	projectTitle: "Fullstack",
+	projectDescription: "A URL Shortener and QR code generator app, built with Express, NextJs and Tailwind",
+    projectDetails: "Modern Next.js web app for shortening URLs and generating QR codes.",
+	projectTools: ["NextJs", "Express", "Tailwind"],
+    keyFeatures: ["Clean UI for URL shortening", "Instant QR code generation & download", "Fully responsive design"],
+	projectThumbnail: "qr.jpg",
+	projectLink: "https://url-shortener-rose-ten.vercel.app/",
+	projectGithub: "https://github.com/dilawrenzo77/URL-Shortener-Frontend"
+   },
+   {
+	projectId:  4, 
+	projectName: "Banking Landing Page",
+	projectTitle: "Frontend",
+	projectDescription: "A dynamic banking landing page, built with Nextjs and Tailwind",
+    projectDetails: "A sleek, responsive, and dynamic banking website landing page built with Next.js and Tailwind CSS",
+	projectTools: ["NextJs", "tailwind"],
+    keyFeatures: ["Fully Responsive — Optimized for mobile, tablet, and desktop", "Modern UI — Clean, minimal, and new-age design"],
+	projectThumbnail: "bank.jpg",
+	projectLink: "https://modern-banking-app-landing-page.vercel.app/",
+	projectGithub: "https://github.com/dilawrenzo77/Modern-Banking-App-Landing-Page"
+   },
+	{
+	projectId:  5, 
 	projectName: "DeFi Landing Page",
 	projectTitle: "Frontend",
 	projectDescription: "A modern, responsive DeFi (Decentralized Finance) landing page built with Next.js and Tailwind CSS",
@@ -37,7 +61,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/DeFi-Landing-Page"
    },
    {
-	projectId:  4, 
+	projectId:  6, 
 	projectName: "RealTime Collaborative Platform",
 	projectTitle: "Full-Stack",
 	projectDescription: "A real time communication platform for a software development team",
@@ -49,7 +73,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Real-time-Collaborative-Platform-HuddleUp-"
    },
    {
-	projectId:  5, 
+	projectId:  7, 
 	projectName: "Dolce&Gabbana Landing Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "A close Clone of D&G's landing page",
@@ -62,7 +86,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Dolce-Gabbana-Landing-Clone"
    },
     {
-	projectId:  6, 
+	projectId:  8, 
 	projectName: "A Hospital Dashboard",
 	projectTitle: "Frontend",
 	projectDescription: "This is a Frontend dashboard for a hopistal managment system.",
@@ -75,7 +99,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Hospital-Dashboard"
    },
 	{
-	projectId:  7, 
+	projectId:  9, 
 	projectName: "Exness Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "Exness Landing Page Clone",
@@ -87,7 +111,7 @@ const Projects = [
 	projectGithub: "https://github.com/dilawrenzo77/Exness-Landing-Clone"
 	},
    {
-	projectId:  8, 
+	projectId:  10, 
 	projectName: "Binance Landing Clone",
 	projectTitle: "FrontEnd",
 	projectDescription: "A close clone of the Binance Finanace Front Page",
@@ -97,18 +121,18 @@ const Projects = [
 	projectThumbnail: "b1.PNG",
 	projectLink: "https://binanceclonelawrence.netlify.app",
 	projectGithub: "https://github.com/dilawrenzo77/Binance-Landing-page-Clone"
-   },
-   {
-	projectId:  9, 
-	projectName: "E-commerce Landing Page",
-	projectTitle: "FrontEnd",
-	projectDescription: "This is the Landing page of a Cologne company",
-    projectDetails: "This is a frontEnd project of a modern day landing page for a fictional cologne company created with Nextjs and tailwind-CSS. It is a clean,user friendly, responsive and modern day designed landing page.",
-    keyFeatures: ["Modern UI: This landing page has a well struttured and clean UI","Responsive design: designed to be responsive taking into consideration various device sizes"],
-	projectTools: ["Next.js", "Tailwind"],
-	projectThumbnail: "vex1.PNG",
-	projectLink: "https://colognelanding.netlify.app",
-	projectGithub: "https://github.com/dilawrenzo77/LandingPage-for-a-Cologne-company"
    }
+//    {
+// 	projectId:  9, 
+// 	projectName: "E-commerce Landing Page",
+// 	projectTitle: "FrontEnd",
+// 	projectDescription: "This is the Landing page of a Cologne company",
+//     projectDetails: "This is a frontEnd project of a modern day landing page for a fictional cologne company created with Nextjs and tailwind-CSS. It is a clean,user friendly, responsive and modern day designed landing page.",
+//     keyFeatures: ["Modern UI: This landing page has a well struttured and clean UI","Responsive design: designed to be responsive taking into consideration various device sizes"],
+// 	projectTools: ["Next.js", "Tailwind"],
+// 	projectThumbnail: "vex1.PNG",
+// 	projectLink: "https://colognelanding.netlify.app",
+// 	projectGithub: "https://github.com/dilawrenzo77/LandingPage-for-a-Cologne-company"
+//    }
 ];
 export default Projects;
