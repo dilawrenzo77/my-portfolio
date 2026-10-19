@@ -45,7 +45,7 @@ const Projects = [
 	projectTools: ["NextJs", "tailwind"],
     keyFeatures: ["Fully Responsive — Optimized for mobile, tablet, and desktop", "Modern UI — Clean, minimal, and new-age design"],
 	projectThumbnail: "bank.jpg",
-	projectLink: "https://modern-banking-app-landing-page.vercel.app/",
+	projectLink: "https://modern-banking-app-landing-page.onrender.com",
 	projectGithub: "https://github.com/dilawrenzo77/Modern-Banking-App-Landing-Page"
    },
 	{
